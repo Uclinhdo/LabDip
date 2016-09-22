@@ -9,13 +9,13 @@ package dip.lab2.mysolution;
  *
  * @author linhdo
  */
-public interface ServiceTipCalculator {
-    public static enum ServiceQuality {
-           GOOD, FAIR, POOR
-    };
-    
-    public abstract ServiceQuality getServiceQuality();
-    public abstract void calculateTip(double tipcalculation);
+public interface TipCalculator {
+//    public static enum ServiceQuality {
+//           GOOD, FAIR, POOR
+//    };
+//    
+   // public abstract ServiceQuality getServiceQuality();
+    public abstract double getTip();
     
     
 }

@@ -10,23 +10,27 @@ package dip.lab2.mysolution;
  * @author linhdo
  */
 public class TipCalculatorManager {
-    private ServiceTipCalculator tipcalculator;
+    private TipCalculator tipcalculator;
 
-    public TipCalculatorManager(ServiceTipCalculator tipcalculator) {
+    public TipCalculatorManager(TipCalculator tipcalculator) {
         this.tipcalculator = tipcalculator;
     }
     
-    public void doCalculate(double tipcalculation){
-        tipcalculator.calculateTip(tipcalculation);
+    public double getTip(){
+        return tipcalculator.getTip();
         
     }
-    
+//     another way to call getTip
+//    public double getTip(TipCalculator tipcalculator){
+//        return tipcalculator.getTip();
+//        
+//    }
 
-    public ServiceTipCalculator getTipcalculator() {
+    public TipCalculator getTipcalculator() {
         return tipcalculator;
     }
 
-    public void setTipcalculator(ServiceTipCalculator tipcalculator) {
+    public void setTipcalculator(TipCalculator tipcalculator) {
         this.tipcalculator = tipcalculator;
     }
     
