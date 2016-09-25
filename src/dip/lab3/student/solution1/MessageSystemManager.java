@@ -19,24 +19,24 @@ public class MessageSystemManager {
     }
     
     
-    public void doMeassage(){
+    public final void doMeassage(){
         String msg = msgreader.readMessage();
         msgwriter.performMessage(msg);
     }
 
-    public MessageReader getMessreader() {
+    public final MessageReader getMessreader() {
         return msgreader;
     }
 
-    public void setMessreader(MessageReader msgreader) {
+    public final void setMessreader(MessageReader msgreader) {
         this.msgreader = msgreader;
     }
 
-    public MessageWriter getMesswriter() {
+    public final MessageWriter getMesswriter() {
         return msgwriter;
     }
 
-    public void setMesswriter(MessageWriter msgwriter) {
+    public final void setMesswriter(MessageWriter msgwriter) {
         this.msgwriter = msgwriter;
     }
     

@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class KeyboardReaderMessage implements MessageReader {
     
     @Override
-    public String readMessage(){
+    public final String readMessage(){
         System.out.print("Enter your message here: ");
         
         Scanner keyboard = new Scanner(System.in);

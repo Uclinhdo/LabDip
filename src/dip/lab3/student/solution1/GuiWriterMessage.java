@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  */
 public class GuiWriterMessage implements MessageWriter {
     @Override
-    public void performMessage(String message){
+    public final void performMessage(String message){
         JOptionPane.showMessageDialog(null, message);
     }
 }

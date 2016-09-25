@@ -12,18 +12,23 @@ package dip.lab3.student.solution1;
 public class ConsoleWriterMessage implements MessageWriter {
     private String message;
 
-    public String getMessage() {
+    public ConsoleWriterMessage(String message) {
+        this.message = message;
+    }
+    
+
+    public final String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public final void setMessage(String message) {
         this.message = message;
     }
     
     
     
     @Override
-  public void performMessage(String message){
+  public final void performMessage(String message){
       System.out.println(message);
   }
     
