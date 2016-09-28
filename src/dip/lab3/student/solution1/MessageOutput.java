@@ -9,8 +9,8 @@ package dip.lab3.student.solution1;
  *
  * @author linhdo
  */
-public interface MessageReader {
+public interface MessageOutput {
 
-    public abstract String readMessage();
+    public abstract void performMessage(String message);
     
 }

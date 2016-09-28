@@ -10,10 +10,10 @@ package dip.lab3.student.solution1;
  * @author ldo
  */
 public class MessageSystemManager {
-    private MessageReader msgreader;
-    private MessageWriter msgwriter;
+    private MessageInput msgreader;
+    private MessageOutput msgwriter;
 
-    public MessageSystemManager(MessageReader msgreader, MessageWriter msgwriter) {
+    public MessageSystemManager(MessageInput msgreader, MessageOutput msgwriter) {
         this.msgreader = msgreader;
         this.msgwriter = msgwriter;
     }
@@ -24,19 +24,19 @@ public class MessageSystemManager {
         msgwriter.performMessage(msg);
     }
 
-    public final MessageReader getMessreader() {
+    public final MessageInput getMessreader() {
         return msgreader;
     }
 
-    public final void setMessreader(MessageReader msgreader) {
+    public final void setMessreader(MessageInput msgreader) {
         this.msgreader = msgreader;
     }
 
-    public final MessageWriter getMesswriter() {
+    public final MessageOutput getMesswriter() {
         return msgwriter;
     }
 
-    public final void setMesswriter(MessageWriter msgwriter) {
+    public final void setMesswriter(MessageOutput msgwriter) {
         this.msgwriter = msgwriter;
     }
     

@@ -9,10 +9,10 @@ package dip.lab3.student.solution1;
  *
  * @author ldo
  */
-public class ConsoleWriterMessage implements MessageWriter {
+public class ConsoleOutputMessage implements MessageOutput {
     private String message;
 
-    public ConsoleWriterMessage(String message) {
+    public ConsoleOutputMessage(String message) {
         this.message = message;
     }
     
